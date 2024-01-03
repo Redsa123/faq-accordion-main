@@ -12,6 +12,9 @@ module.exports = {
         fontFamily: {
             workSans: ["Work Sans", "sans-serif"],
         },
+        screens: {
+            tablet: "640px",
+        },
     },
     plugins: [],
 };
