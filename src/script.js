@@ -18,45 +18,43 @@ Array.from(questions).forEach((question) => {
         const plus = Array.from(pluses).filter(
             (plus) => plus.classList[0] == question.classList[0]
         );
-        if (
-            plus[0].src == "http://127.0.0.1:5500/assets/images/icon-plus.svg"
-        ) {
-            plus[0].src = "http://127.0.0.1:5500/assets/images/icon-minus.svg";
+        if (plus[0].src == "http://127.0.0.1:5500/src/images/icon-plus.svg") {
+            plus[0].src = "http://127.0.0.1:5500/src/images/icon-minus.svg";
         } else {
-            plus[0].src = "http://127.0.0.1:5500/assets/images/icon-plus.svg";
+            plus[0].src = "http://127.0.0.1:5500/src/images/icon-plus.svg";
         }
     });
 });
 
 plus1.addEventListener("click", () => {
     document.querySelector(".answear1").classList.toggle("hidden");
-    if (plus1.src == "http://127.0.0.1:5500/assets/images/icon-plus.svg") {
-        plus1.src = "http://127.0.0.1:5500/assets/images/icon-minus.svg";
+    if (plus1.src == "http://127.0.0.1:5500/src/images/icon-plus.svg") {
+        plus1.src = "http://127.0.0.1:5500/src/images/icon-minus.svg";
     } else {
-        plus1.src = "http://127.0.0.1:5500/assets/images/icon-plus.svg";
+        plus1.src = "http://127.0.0.1:5500/src/images/icon-plus.svg";
     }
 });
 plus2.addEventListener("click", () => {
     document.querySelector(".answear2").classList.toggle("hidden");
-    if (plus2.src == "http://127.0.0.1:5500/assets/images/icon-plus.svg") {
-        plus2.src = "http://127.0.0.1:5500/assets/images/icon-minus.svg";
+    if (plus2.src == "http://127.0.0.1:5500/src/images/icon-plus.svg") {
+        plus2.src = "http://127.0.0.1:5500/src/images/icon-minus.svg";
     } else {
-        plus2.src = "http://127.0.0.1:5500/assets/images/icon-plus.svg";
+        plus2.src = "http://127.0.0.1:5500/src/images/icon-plus.svg";
     }
 });
 plus3.addEventListener("click", () => {
     document.querySelector(".answear3").classList.toggle("hidden");
-    if (plus3.src == "http://127.0.0.1:5500/assets/images/icon-plus.svg") {
-        plus3.src = "http://127.0.0.1:5500/assets/images/icon-minus.svg";
+    if (plus3.src == "http://127.0.0.1:5500/src/images/icon-plus.svg") {
+        plus3.src = "http://127.0.0.1:5500/src/images/icon-minus.svg";
     } else {
-        plus3.src = "http://127.0.0.1:5500/assets/images/icon-plus.svg";
+        plus3.src = "http://127.0.0.1:5500/src/images/icon-plus.svg";
     }
 });
 plus4.addEventListener("click", () => {
     document.querySelector(".answear4").classList.toggle("hidden");
-    if (plus4.src == "http://127.0.0.1:5500/assets/images/icon-plus.svg") {
-        plus4.src = "http://127.0.0.1:5500/assets/images/icon-minus.svg";
+    if (plus4.src == "http://127.0.0.1:5500/src/images/icon-plus.svg") {
+        plus4.src = "http://127.0.0.1:5500/src/images/icon-minus.svg";
     } else {
-        plus4.src = "http://127.0.0.1:5500/assets/images/icon-plus.svg";
+        plus4.src = "http://127.0.0.1:5500/src/images/icon-plus.svg";
     }
 });
