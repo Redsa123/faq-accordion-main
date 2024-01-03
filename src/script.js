@@ -28,11 +28,13 @@ Array.from(questions).forEach((question) => {
 
 plus1.addEventListener("click", () => {
     document.querySelector(".answear1").classList.toggle("hidden");
-    if (plus1.src == "http://127.0.0.1:5500/src/images/icon-plus.svg") {
-        plus1.src = "http://127.0.0.1:5500/src/images/icon-minus.svg";
+    if (plus1.src == "./images/icon-plus.svg") {
+        plus1.src = "./images/icon-minus.svg";
     } else {
-        plus1.src = "http://127.0.0.1:5500/src/images/icon-plus.svg";
+        plus1.src = "./images/icon-plus.svg";
     }
+
+    console.log(plus1.src);
 });
 plus2.addEventListener("click", () => {
     document.querySelector(".answear2").classList.toggle("hidden");
