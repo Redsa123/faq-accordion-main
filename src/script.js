@@ -23,6 +23,7 @@ Array.from(questions).forEach((question) => {
         } else {
             plus[0].src = "http://127.0.0.1:5500/src/images/icon-plus.svg";
         }
+        console.log(plus[0]);
     });
 });
 
