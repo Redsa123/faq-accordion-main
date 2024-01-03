@@ -1,3 +1,53 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+    font-family: "Work Sans", sans-serif;
+    background-color: #ffd8ff;
+}
+
+.faqs-container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 40px;
+    transform: translateY(-100px);
+}
+
+.faq-title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.questions {
+    margin-top: 20px;
+}
+
+.question-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.question {
+    font-weight: 600;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.plus {
+    cursor: pointer;
+}
+
+.question:hover {
+    color: rgb(255, 119, 235);
+}
+
+.faq-answear {
+    color: rgb(84, 71, 79)
+}
+
+.hidden {
+    display: none;
+}

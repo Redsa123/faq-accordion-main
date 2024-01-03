@@ -1,0 +1,13 @@
+@media screen and (max-width: 700px) {
+    .faqs-container {
+        transform: none;
+        width: 80%;
+    }
+    .faq-title {
+        font-size: 20px;
+    }
+
+    .question {
+        font-size: 14px;
+    }
+}

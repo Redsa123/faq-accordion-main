@@ -1,5 +1,5 @@
 const questions = document.querySelectorAll(".question");
-const answers = document.querySelectorAll(".faq-answer");
+const answears = document.querySelectorAll(".faq-answear");
 const pluses = document.querySelectorAll(".plus");
 const plus1 = document.querySelector(".plus1");
 const plus2 = document.querySelector(".plus2");
@@ -8,11 +8,11 @@ const plus4 = document.querySelector(".plus4");
 
 Array.from(questions).forEach((question) => {
     question.addEventListener("click", () => {
-        const answer = Array.from(answers).filter(
-            (answer) => answer.classList[0] == question.classList[0]
+        const answear = Array.from(answears).filter(
+            (answear) => answear.classList[0] == question.classList[0]
         );
-        answerElement = document
-            .querySelector(`.${answer[0].classList[1]}`)
+        answearElement = document
+            .querySelector(`.${answear[0].classList[1]}`)
             .classList.toggle("hidden");
 
         const plus = Array.from(pluses).filter(
@@ -29,7 +29,7 @@ Array.from(questions).forEach((question) => {
 });
 
 plus1.addEventListener("click", () => {
-    document.querySelector(".answer1").classList.toggle("hidden");
+    document.querySelector(".answear1").classList.toggle("hidden");
     if (plus1.src == "http://127.0.0.1:5500/assets/images/icon-plus.svg") {
         plus1.src = "http://127.0.0.1:5500/assets/images/icon-minus.svg";
     } else {
@@ -37,7 +37,7 @@ plus1.addEventListener("click", () => {
     }
 });
 plus2.addEventListener("click", () => {
-    document.querySelector(".answer2").classList.toggle("hidden");
+    document.querySelector(".answear2").classList.toggle("hidden");
     if (plus2.src == "http://127.0.0.1:5500/assets/images/icon-plus.svg") {
         plus2.src = "http://127.0.0.1:5500/assets/images/icon-minus.svg";
     } else {
@@ -45,7 +45,7 @@ plus2.addEventListener("click", () => {
     }
 });
 plus3.addEventListener("click", () => {
-    document.querySelector(".answer3").classList.toggle("hidden");
+    document.querySelector(".answear3").classList.toggle("hidden");
     if (plus3.src == "http://127.0.0.1:5500/assets/images/icon-plus.svg") {
         plus3.src = "http://127.0.0.1:5500/assets/images/icon-minus.svg";
     } else {
@@ -53,7 +53,7 @@ plus3.addEventListener("click", () => {
     }
 });
 plus4.addEventListener("click", () => {
-    document.querySelector(".answer4").classList.toggle("hidden");
+    document.querySelector(".answear4").classList.toggle("hidden");
     if (plus4.src == "http://127.0.0.1:5500/assets/images/icon-plus.svg") {
         plus4.src = "http://127.0.0.1:5500/assets/images/icon-minus.svg";
     } else {

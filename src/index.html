@@ -13,8 +13,9 @@
             sizes="32x32"
             href="./assets/images/favicon-32x32.png"
         />
-
-        <link href="/dist/output.css" rel="stylesheet" />
+        <link href="./null.css" rel="stylesheet" />
+        <link href="./input.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./responsive.css">
 
         <title>Frontend Mentor | FAQ accordion</title>
 
@@ -25,9 +26,9 @@
             rel="stylesheet"
         />
     </head>
-    <body class="h-[100%] font-workSans">
-        <div class="container min-w-full min-h-full bg-lightpink relative">
-            <div class="bg">
+    <body>
+        <div class="wrapper">
+            <div>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="100%"
@@ -51,66 +52,44 @@
                     </defs>
                 </svg>
             </div>
-            <div
-                class="faqs-container w-[50%] sm:w-full flex flex-col bg-white rounded-[30px] p-5 mx-auto sm:-translate-y-20"
-            >
-                <div class="faq-title flex gap-x-4 items-center">
+            <div class="faqs-container">
+                <div class="faq-title">
                     <img src="../assets/images/icon-star.svg" alt="#" />
-                    <div class="text-[20px] tablet:text-[34px] font-[700]">
-                        FAQs
-                    </div>
+                    <div>FAQs</div>
                 </div>
                 <div class="questions">
-                    <div
-                        class="question-container flex justify-between items-center"
-                    >
-                        <div
-                            class="1 question font-[600] hover:text-[#AD28EB] duration-150 cursor-pointer"
-                        >
+                    <div class="question-container">
+                        <div class="1 question">
                             What is Frontend Mentor, and how will it help me?
                         </div>
                         <img
-                            class="1 plus1 plus cursor-pointer"
+                            class="1 plus1 plus"
                             src="../assets/images/icon-plus.svg"
                             alt="#"
                         />
                     </div>
-                    <div
-                        class="1 answer1 faq-answer text-grayishpurple text-[14px] my-5 hidden"
-                    >
+                    <div class="1 answear1 faq-answear hidden">
                         Frontend Mentor offers realistic coding challenges to
                         help developers improve their frontend coding skills
                         with projects in HTML, CSS, and JavaScript. It's
                         suitable for all levels and ideal for portfolio
                         building.
                     </div>
-                    <div
-                        class="question-container flex justify-between items-center"
-                    >
-                        <div
-                            class="2 question font-[600] hover:text-[#AD28EB] duration-150 cursor-pointer"
-                        >
-                            Is Frontend Mentor free?
-                        </div>
+                    <div class="question-container">
+                        <div class="2 question">Is Frontend Mentor free?</div>
                         <img
-                            class="2 plus2 plus cursor-pointer"
+                            class="2 plus2 plus"
                             src="../assets/images/icon-plus.svg"
                             alt="#"
                         />
                     </div>
-                    <div
-                        class="2 answer2 faq-answer text-grayishpurple text-[14px] my-5 hidden"
-                    >
+                    <div class="2 answear2 faq-answear hidden">
                         Yes, Frontend Mentor offers both free and premium coding
                         challenges, with the free option providing access to a
                         range of projects suitable for all skill levels.
                     </div>
-                    <div
-                        class="question-container flex justify-between items-center"
-                    >
-                        <div
-                            class="3 question font-[600] hover:text-[#AD28EB] duration-150 cursor-pointer"
-                        >
+                    <div class="question-container">
+                        <div class="3 question">
                             Can I use Frontend Mentor projects in my portfolio?
                         </div>
                         <img
@@ -119,19 +98,13 @@
                             alt="#"
                         />
                     </div>
-                    <div
-                        class="3 answer3 faq-answer text-grayishpurple text-[14px] my-5 hidden"
-                    >
+                    <div class="3 answear3 faq-answear hidden">
                         Yes, you can use projects completed on Frontend Mentor
                         in your portfolio. It's an excellent way to showcase
                         your skills to potential employers!
                     </div>
-                    <div
-                        class="question-container flex justify-between items-center"
-                    >
-                        <div
-                            class="4 question font-[600] hover:text-[#AD28EB] duration-150 cursor-pointer"
-                        >
+                    <div class="question-container">
+                        <div class="4 question">
                             How can I get help if I'm stuck on a Frontend Mentor
                             challenge?
                         </div>
@@ -141,9 +114,7 @@
                             alt="#"
                         />
                     </div>
-                    <div
-                        class="4 answer4 faq-answer text-grayishpurple text-[14px] my-5 hidden"
-                    >
+                    <div class="4 answear4 faq-answear hidden">
                         The best place to get help is inside Frontend Mentor's
                         Discord community. There's a help channel where you can
                         ask questions and seek support from other community
